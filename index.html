@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Demo</title>
+
+<!-- outside "libraries" -->
+<script src="https://burakkanber.com/~/bayes/positive.js"></script>
+<script src="https://burakkanber.com/~/bayes/negative.js"></script>
+<script src="https://burakkanber.com/~/bayes/PorterStemmer1980.min.js"></script>
+<script src="https://burakkanber.com/~/bayes/bayes.js"></script>
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.map"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.map"></script>
+
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="script.js"></script>
+<script src="sparkley.js"></script>
+
+
+</head>
+<body>
+
+    <h1>Share a memory:</h1>
+    <textarea id="testBox"
+        placeholder="eg: The first time I swam in the ocean, it felt like a hug. "></textarea>
+          <br></br>
+    <button id="testButton" class="sparkley"> <img
+            src="https://media.giphy.com/media/w78ifyfLK7q8308f0k/giphy.gif">Submit</button>
+    <p id="testResult" style="display:none;">Guess: <span id="testResultLabel"></span> (<span id="testResultProbability"></span>% probability)</p>
+
+<div class="progressBars">
+    <p>Training progress: <span id="trainingProgressValue">0</span>%</p>
+    <div class="progress-wrapper">
+        <div class="progress" id="trainingProgressBar"></div>
+    </div>
+
+    <p>Test results: <span id="testResultsValue">0</span>% accuracy</p>
+    <div class="progress-wrapper">
+        <div class="progress" id="testResultsBar"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

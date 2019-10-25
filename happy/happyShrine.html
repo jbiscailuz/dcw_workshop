@@ -1,0 +1,353 @@
+<html>
+
+<head>
+
+    <style>
+.img14 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 524px;
+top: 6px;
+width: 180px;
+height: 168px;
+z-index: 15;
+}
+
+.img13 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 607px;
+top: 570px;
+width: 180px;
+height: 168px;
+z-index: 14;
+}
+
+.img12 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 342px;
+top: 339px;
+width: 180px;
+height: 168px;
+z-index: 13;
+}
+
+.img11 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 836px;
+top: 552px;
+width: 180px;
+height: 168px;
+z-index: 12;
+}
+
+.img10 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 295px;
+top: 23px;
+width: 180px;
+height: 168px;
+z-index: 5;
+}
+
+.img09 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 745px;
+top: 41px;
+width: 180px;
+height: 168px;
+z-index: 10;
+}
+
+.img08 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 342px;
+top: 522px;
+width: 180px;
+height: 168px;
+z-index: 9;
+}
+
+.img07 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+/* left: 386px; */
+left: 360px;
+top: 126px;
+width: 180px;
+height: 168px;
+/* z-index: 8; */
+z-index: 11;
+}
+
+.img06 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 789px;
+top: 255px;
+width: 180px;
+height: 168px;
+z-index: 7;
+}
+
+.img05 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 768px;
+top: 434px;
+width: 180px;
+height: 168px;
+z-index: 6;
+}
+
+.img04 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 630px;
+top: 161px;
+width: 180px;
+height: 168px;
+z-index: 5;
+}
+
+.img03 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 477px;
+/* top: 450px; */
+top: 410px;
+width: 180px;
+height: 168px;
+z-index: 4;
+}
+
+.img02 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 477px;
+top: 228px;
+width: 180px;
+height: 168px;
+z-index: 3;
+}
+
+.img01 {
+/* border-width: 1px;
+border-color: rgb(180, 145, 195);
+border-style: solid; */
+position: absolute;
+left: 630px;
+top: 348px;
+width: 180px;
+height: 168px;
+z-index: 2;
+}
+
+img {
+max-height: 200px;
+width: auto;
+}
+
+img .flowerImg {
+max-height: 300px;
+width:auto;
+}
+
+img .candlesImg {
+max-height: 150px;
+width:auto;
+}
+
+a img {
+border: none;
+}
+</style>
+
+<script>
+// https://www.dyn-web.com/code/random-image-js/
+
+// FLOWERS
+var random_images_array01 = ['01.png', '02.png', '03.png', '04.png', '05.png', '06.png', '07.png', '08.gif', '09.gif',
+'10.png', '11.gif', '12.gif'];
+
+function getRandomImage(imgAr, path) {
+path = path || 'images/flowers/'; // default path here
+var num = Math.floor(Math.random() * imgAr.length);
+var img = imgAr[num];
+var imgStr = '<img class="flowerImg" src="' + path + img + '" alt="">';
+document.write(imgStr); document.close();
+}
+
+// FOOD
+var random_images_array02 = ['01.png', '02.png', '03.png', '04.png', '05.png', '06.png', '07.png', '08.png', '09.gif',
+'10.gif', '11.png'];
+
+function getRandomImage(imgAr, path) {
+path = path || 'images/food/'; // default path here
+var num = Math.floor(Math.random() * imgAr.length);
+var img = imgAr[num];
+var imgStr = '<img class="foodImg" src="' + path + img + '" alt="">';
+document.write(imgStr); document.close();
+}
+
+// JEWELRY
+var random_images_array03 = ['01.png', '02.png', '03.png', '05.png', '06.png', '07.gif'];
+
+function getRandomImage(imgAr, path) {
+path = path || 'images/jewelry/'; // default path here
+var num = Math.floor(Math.random() * imgAr.length);
+var img = imgAr[num];
+var imgStr = '<img class="jewelryImg" src="' + path + img + '" alt="">';
+document.write(imgStr); document.close();
+}
+
+// MISC
+var random_images_array04 = ['05.png', '08.png', '09.gif', '10.gif', '11.gif', '12.png', '13.png'];
+
+function getRandomImage(imgAr, path) {
+path = path || 'images/misc/'; // default path here
+var num = Math.floor(Math.random() * imgAr.length);
+var img = imgAr[num];
+var imgStr = '<img class="miscImg" src="' + path + img + '" alt="">';
+document.write(imgStr); document.close();
+}
+
+// RELIGIOUS
+var random_images_array05 = ['01.png', '02.png', '03.png', '04.png', '05.gif', '06.gif', '08.gif', '09.gif', '10.gif', '11.gif', '12.gif'];
+
+function getRandomImage(imgAr, path) {
+path = path || 'images/religious/'; // default path here
+var num = Math.floor(Math.random() * imgAr.length);
+var img = imgAr[num];
+var imgStr = '<img class="religImg" src="' + path + img + '" alt="">';
+document.write(imgStr); document.close();
+}
+
+// MISC 2
+var random_images_array06 = ['01.png', '02.png', '04.png', '05.png', '08.png', '09.png', '10.gif', '11.gif', '13.gif'];
+
+function getRandomImage(imgAr, path) {
+path = path || 'images/misc2/'; // default path here
+var num = Math.floor(Math.random() * imgAr.length);
+var img = imgAr[num];
+var imgStr = '<img class="misc2Img" src="' + path + img + '" alt="">';
+document.write(imgStr); document.close();
+}
+
+// CHAINS
+var random_images_array07 = [ '02.png', '04.png', '06.gif'];
+
+function getRandomImage(imgAr, path) {
+path = path || 'images/chains/'; // default path here
+var num = Math.floor(Math.random() * imgAr.length);
+var img = imgAr[num];
+var imgStr = '<img class="chainsImg" src="' + path + img + '" alt="">';
+document.write(imgStr); document.close();
+}
+
+// CANDLES
+var random_images_array08 = ['01.png', '03.png', '04.png'];
+
+function getRandomImage(imgAr, path) {
+path = path || 'images/candles/'; // default path here
+var num = Math.floor(Math.random() * imgAr.length);
+var img = imgAr[num];
+var imgStr = '<img class="candlesImg" src="' + path + img + '" alt="">';
+document.write(imgStr); document.close();
+}
+
+// CRYSTALS
+var random_images_array09 = ['01.png', '02.png', '03.png', '04.png', '05.png', '06.png'];
+
+function getRandomImage(imgAr, path) {
+path = path || 'images/crystals/'; // default path here
+var num = Math.floor(Math.random() * imgAr.length);
+var img = imgAr[num];
+var imgStr = '<img class="crystalsImg" src="' + path + img + '" alt="">';
+document.write(imgStr); document.close();
+}
+</script>
+
+</head>
+
+
+<body>
+
+ <div class="Shrine">
+    
+    <div class="img01">
+    <script type="text/javascript">getRandomImage(random_images_array01, 'images/flowers/')</script> </div>
+    
+    <div class="img02">
+    <script type="text/javascript">getRandomImage(random_images_array02, 'images/food/')</script></div>
+    
+    <div class="img03">
+    <script type="text/javascript">getRandomImage(random_images_array03, 'images/jewelry/')</script></div>
+    
+    <div class="img04">
+    <script type="text/javascript">getRandomImage(random_images_array04, 'images/misc/')</script></div>
+    
+    <div class="img05">
+    <script type="text/javascript">getRandomImage(random_images_array05, 'images/religious/')</script></div>
+    
+    <div class="img06">
+    <script type="text/javascript">getRandomImage(random_images_array06, 'images/misc2/')</script></div>
+    
+    <div class="img07">
+    <script type="text/javascript">getRandomImage(random_images_array07, 'images/chains/')</script></div>
+    
+    <div class="img08">
+    <script type="text/javascript">getRandomImage(random_images_array08, 'images/candles/')</script></div>
+    
+    <div class="img09">
+    <script type="text/javascript">getRandomImage(random_images_array09, 'images/crystals/')</script></div>
+    
+    <div class="img10">
+    <script type="text/javascript">getRandomImage(random_images_array08, 'images/candles/')</script></div>
+    
+    <div class="img11">
+    <script type="text/javascript">getRandomImage(random_images_array08, 'images/candles/')</script></div>
+    
+    <div class="img12">
+    <script type="text/javascript">getRandomImage(random_images_array01, 'images/flowers/')</script></div>
+    
+    <div class="img13">
+    <script type="text/javascript">getRandomImage(random_images_array01, 'images/flowers/')</script></div>
+    
+    <div class="img14">
+    <script type="text/javascript">getRandomImage(random_images_array05, 'images/religious/')</script></div>
+
+</div>  
+
+</body>
