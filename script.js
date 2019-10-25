@@ -147,10 +147,10 @@ console.log(result.label);
 
 if ((result.label).includes('positive')) {
     console.log("felicidad");
-    location.href = "happy/happyShrine.html"
+    location.href = "dcw_workshop/happy/happyShrine.html"
 } else if ((result.label).includes('negative')) {
     console.log("tristeza");
-    location.href = "sad/sadShrine.html"
+    location.href = "dcw_workshop/sad/sadShrine.html"
 }
 });
 }
